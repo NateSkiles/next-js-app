@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Flex, Box, Text, Button } from '@chakra-ui/react';
 
+import { baseUrl, fetchApi } from '../utils/fetchApi';
+
 const Banner = ({ purpose, imageUrl, title1, title2, desc1, desc2, buttonText, linkName }) => (
   <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">
     <Image src={imageUrl} width={500} height={300} alt="banner" />
@@ -13,6 +15,9 @@ const Banner = ({ purpose, imageUrl, title1, title2, desc1, desc2, buttonText, l
         <Link href={linkName}>{buttonText}</Link>
       </Button>
     </Box>
+    <Flex flexWrap='wrap'>
+      {/* Fetch props and map over them */}
+    </Flex>
   </Flex>
 )
 
