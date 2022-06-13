@@ -20,7 +20,6 @@ const Banner = ({ purpose, imageUrl, title1, title2, desc1, desc2, buttonText, l
 )
 
 export default function Home({ propertiesForSale, propertiesForRent }) {
-  console.log(propertiesForSale, propertiesForRent);
   return (
     <Box>
       <Banner
